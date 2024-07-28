@@ -1,0 +1,25 @@
+{
+  "name": "p2pauction",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=22.3.0"
+  },
+  "scripts": {
+    "start-dht": "npx hyperdht --bootstrap --host 127.0.0.1 --port 30001",
+    "start-p2p": "npx ts-node src/p2pNode.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hyperswarm/rpc": "^3.3.2",
+    "@types/node": "^22.0.0",
+    "crypto": "^1.0.1",
+    "hyperbee": "^2.20.0",
+    "hypercore": "^10.37.13",
+    "hyperdht": "^6.16.1",
+    "typescript": "^5.5.4",
+    "zod": "^3.23.8"
+  }
+}
